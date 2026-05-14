@@ -52,7 +52,7 @@ def execute_command(cmd:str):
     import subprocess
     print(f"実行するコマンド: {cmd}")
 
-    sp = subprocess.run(cmd, shell=True, capture_output=True, text=True, encoding="utf-8")
+    sp = subprocess.run(cmd, shell=True, capture_output=True, text=True, encoding="cp932")
 
     print("実行結果:")
     print(sp.stdout)
